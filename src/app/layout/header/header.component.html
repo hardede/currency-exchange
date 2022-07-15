@@ -1,23 +1,27 @@
 <div class="bg-[#303030] text-[#c1c0c0] py-6 px-5">
-  <div class="flex align-middle">
-    <h1 class="pr-20">Exchange currencies</h1>
-    <mat-icon
-      aria-hidden="false"
-      aria-label="Example home icon"
-      style="color: white; font: bold; font-size: 26px"
-      >attach_money</mat-icon
-    >
-    <div *ngFor="let item of data">
-      <p class="text-lg pl-5 pr-10">{{ item.buy }}/{{ item.sale }}</p>
+  <div class="flex align-middle md:block">
+    <h1 class="pr-20 md:pr-10">Exchange currencies</h1>
+    <div class="flex md:my-4">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        style="color: white; font: bold; font-size: 26px"
+        >attach_money</mat-icon
+      >
+      <div *ngFor="let item of data">
+        <p class="text-lg pl-5 pr-10">{{ item.buy }}/{{ item.sale }}</p>
+      </div>
     </div>
-    <mat-icon
-      aria-hidden="false"
-      aria-label="Example home icon"
-      style="color: white; font: bold; font-size: 26px"
-      >euro</mat-icon
-    >
-    <div *ngFor="let item of data1">
-      <p class="text-lg pl-5 pr-10">{{ item.buy }}/{{ item.sale }}</p>
+    <div class="flex">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        style="color: white; font: bold; font-size: 26px"
+        >euro</mat-icon
+      >
+      <div *ngFor="let item of data1">
+        <p class="text-lg pl-5 pr-10">{{ item.buy }}/{{ item.sale }}</p>
+      </div>
     </div>
   </div>
 </div>
