@@ -1,0 +1,36 @@
+<div class="text-center text-white align-middle overflow-y-hidden">
+  <div class="bg-[#303030] w-[600px] h-[300px] mx-auto mt-10">
+    <div class="p-5 flex justify-center">
+      <select
+        class="exchangeSelect"
+        #c1
+        name=""
+        id="country1"
+        (mouseleave)="changeBase(c1.value)"
+      >
+        <option value="USD">USD</option>
+      </select>
+      <input placeholder="200" [(ngModel)]="amount" class="exchangeInput" />
+      <div class="mx-[12px] py-2">to</div>
+      <select
+        class="exchangeSelect"
+        #c2
+        name=""
+        id="country1"
+        (mouseleave)="toCountry(c2.value)"
+      >
+        <option value="UAH">UAH</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+      <input placeholder="200" [(ngModel)]="result2" class="exchangeInput" />
+    </div>
+    <button (click)="convert()" class="px-4 py-2 bg-[#4d4d4d] mb-3">Submit</button>
+    <div class="text-white flex justify-center">
+      <p>1 {{ base }}</p>
+      <p class="px-2 "> = </p>
+
+      <p class="">{{ result }} {{ cont2 }}</p>
+    </div>
+  </div>
+</div>

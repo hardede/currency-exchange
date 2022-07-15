@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography p {
+  margin: 0;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6 {
+  margin: 0;
+}
+
+@layer components {
+  .exchangeInput {
+    @apply bg-[#303030] w-[160px] border-b-2 py-2 text-right border-[#494949] hover:border-white transition ease-in-out duration-500 outline-none focus:border-[#8dc641] placeholder:text-white placeholder:opacity-40
+  }
+  .exchangeSelect {
+    @apply bg-[#303030] mr-3 py-2 px-2 border-b-2 border-[#494949] hover:border-white transition ease-in-out duration-500 outline-none
+  }
+}
